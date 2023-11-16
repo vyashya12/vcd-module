@@ -1,5 +1,6 @@
-resource "vcd_vm" "yashvm" {
-  name          = "yashvm"
+resource "vcd_vapp_vm" "yashvmfromjenkin" {
+  vapp_name     = "yash-vApp-provisionerfromjenkin"
+  name          = "yashvmfromjenkin"
   org           = "MY1VMC2-DEMO"
   vdc           = "MY1VMC2-DemoVDC"
   computer_name = "MyFirstComputerVCD"
