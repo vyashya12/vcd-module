@@ -24,6 +24,6 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
     name               = "private"
     type               = "org"
     ip_allocation_mode = "MANUAL"
-    ip                 = "10.10.10.1"
+    ip                 = "10.10.10.30"
   }
 }
