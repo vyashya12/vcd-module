@@ -1,6 +1,6 @@
 resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   vapp_name     = "yash-vApp-provisionerfromjenkin"
-  name          = "yashvmfrom"
+  name          = "yashvmfromjenkin30"
   org           = "MY1VMC2-DEMO"
   vdc           = "MY1VMC2-DemoVDC"
   computer_name = "MyFirstComputerVCD"
@@ -24,6 +24,6 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
     name               = "private"
     type               = "org"
     ip_allocation_mode = "MANUAL"
-    ip                 = "10.10.10.30"
+    ip                 = "10.10.10.20"
   }
 }
