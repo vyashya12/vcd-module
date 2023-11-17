@@ -1,6 +1,6 @@
 resource "vcd_vapp_vm" "yashvmfromjenkin" {
   vapp_name     = "yash-vApp-provisionerfromjenkin"
-  name          = "yashvmfromjenkin"
+  name          = "yashvmfromjenkin2"
   org           = "MY1VMC2-DEMO"
   vdc           = "MY1VMC2-DemoVDC"
   computer_name = "MyFirstComputerVCD"
@@ -13,7 +13,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin" {
   power_on      = true
 
   override_template_disk {
-    bus_type        = "sas"
+    bus_type        = "parallel"
     size_in_mb      = "30720"
     bus_number      = 0
     unit_number     = 0
