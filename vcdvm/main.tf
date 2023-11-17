@@ -13,7 +13,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin" {
   power_on      = true
 
   override_template_disk {
-    bus_type        = "parallel"
+    bus_type        = "paravirtual"
     size_in_mb      = "30720"
     bus_number      = 0
     unit_number     = 0
