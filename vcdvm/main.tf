@@ -1,4 +1,4 @@
-resource "vcd_vapp_vm" "yashvmfromjenkin" {
+resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   vapp_name     = "yash-vApp-provisionerfromjenkin"
   name          = "yashvmfrom"
   org           = "MY1VMC2-DEMO"
