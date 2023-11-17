@@ -14,7 +14,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin" {
 
   override_template_disk {
     bus_type        = "parallel"
-    size_in_mb      = "30720"
+    size_in_mb      = "40960"
     bus_number      = 0
     unit_number     = 0
     storage_profile = "FTT1-Medium-IOPs(Performance-VMC2)"
