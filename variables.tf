@@ -23,3 +23,8 @@ variable "vm_name" {
   description = "Set VM Name"
   type        = string
 }
+
+variable "allocated_ip" {
+  description = "IP address to be allocated for VM"
+  type        = string
+}

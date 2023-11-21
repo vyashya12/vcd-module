@@ -18,7 +18,8 @@ module "vapp" {
 }
 
 module "vcd_vm" {
-  source    = "./vcdvm"
-  vapp_name = var.vapp_name
-  vm_name   = var.vm_name
+  source       = "./vcdvm"
+  vapp_name    = var.vapp_name
+  vm_name      = var.vm_name
+  allocated_ip = var.allocated_ip
 }
