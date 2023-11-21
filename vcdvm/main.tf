@@ -1,4 +1,5 @@
 resource "vcd_vapp_vm" "yashvmfromjenkin2" {
+  count         = var.create_vm ? 1 : 0
   vapp_name     = var.vapp_name
   name          = var.vm_name
   org           = "MY1VMC2-DEMO"

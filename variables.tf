@@ -14,6 +14,11 @@ variable "create_vapp" {
   type        = bool
 }
 
+variable "create_vm" {
+  description = "If set to true, enable vm creation"
+  type        = bool
+}
+
 variable "vapp_name" {
   description = "Set vapp name"
   type        = string
