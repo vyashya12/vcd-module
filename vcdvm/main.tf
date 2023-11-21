@@ -1,6 +1,6 @@
 resource "vcd_vapp_vm" "yashvmfromjenkin2" {
-  vapp_name     = "yash-vApp-provisionerfromjenkin"
-  name          = "yashvmfromjenkin30"
+  vapp_name     = var.vapp_name
+  name          = var.vm_name
   org           = "MY1VMC2-DEMO"
   vdc           = "MY1VMC2-DemoVDC"
   computer_name = "MyFirstComputerVCD"

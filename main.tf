@@ -11,10 +11,14 @@ provider "vcd" {
 }
 
 module "vapp" {
-  source = "./vapp"
+  source      = "./vapp"
+  vapp_name   = var.vapp_name
+  create_vapp = var.create_vapp
 
 }
 
 module "vcd_vm" {
-  source = "./vcdvm"
+  source    = "./vcdvm"
+  vapp_name = var.vapp_name
+  vm_name   = var.vm_name
 }
