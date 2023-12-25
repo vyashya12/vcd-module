@@ -12,8 +12,3 @@ variable "allocated_ip" {
   description = "IP address to be allocated for VM"
   type        = string
 }
-
-variable "create_vm" {
-  description = "If set to true, enable vm creation"
-  type        = bool
-}
