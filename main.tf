@@ -10,11 +10,6 @@ provider "vcd" {
   vdc                  = "MY1VMC2-DemoVDC"
 }
 
-module "vapp" {
-  source      = "./vapp"
-  vapp_name   = var.vapp_name
-}
-
 module "vcd_vm" {
   source       = "./vcdvm"
   vapp_name    = var.vapp_name
