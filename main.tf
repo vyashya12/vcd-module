@@ -13,8 +13,6 @@ provider "vcd" {
 module "vapp" {
   source      = "./vapp"
   vapp_name   = var.vapp_name
-  create_vapp = var.create_vapp
-
 }
 
 module "vcd_vm" {
@@ -22,5 +20,4 @@ module "vcd_vm" {
   vapp_name    = var.vapp_name
   vm_name      = var.vm_name
   allocated_ip = var.allocated_ip
-  create_vm    = var.create_vm
 }
