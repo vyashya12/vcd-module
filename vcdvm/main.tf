@@ -5,13 +5,13 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   vdc       = var.vdc_name
 
   catalog_name  = "Templates"
-  template_name = "Ubuntu20TLS"
+  template_name = var.template_name
   cpus          = var.vCPU
   memory        = var.memory
   power_on      = true
 
   override_template_disk {
-    bus_type        = "parallel"
+    bus_type        = var.bus_type
     size_in_mb      = var.disk_size
     bus_number      = 0
     unit_number     = 0
