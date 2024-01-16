@@ -42,3 +42,13 @@ variable "disk_size" {
   description = "Add disk size"
   type        = string
 }
+
+variable "template_name" {
+  description = "Add template"
+  type        = string
+}
+
+variable "bus_type" {
+  description = "Add bus type"
+  type        = string
+}
