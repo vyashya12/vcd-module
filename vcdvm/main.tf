@@ -18,6 +18,12 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
     storage_profile = "FTT1-Medium-IOPs(Performance-VMC2)"
   }
 
+  customization {
+    initscript = <<-EOT
+      ${var.script}
+    EOT
+  }
+
   network {
     name               = var.network
     type               = "org"

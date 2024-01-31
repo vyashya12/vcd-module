@@ -11,16 +11,17 @@ provider "vcd" {
 }
 
 module "vcd_vm" {
-  source       = "./vcdvm"
-  vapp_name    = var.vapp_name
-  vm_name      = var.vm_name
-  allocated_ip = var.allocated_ip
-  org_name     = var.org_name
-  vdc_name     = var.vdc_name
-  vCPU         = var.vCPU
-  memory       = var.memory
-  network      = var.network
-  disk_size    = var.disk_size
+  source        = "./vcdvm"
+  vapp_name     = var.vapp_name
+  vm_name       = var.vm_name
+  allocated_ip  = var.allocated_ip
+  org_name      = var.org_name
+  vdc_name      = var.vdc_name
+  vCPU          = var.vCPU
+  memory        = var.memory
+  network       = var.network
+  disk_size     = var.disk_size
   template_name = var.template_name
-  bus_type = var.bus_type
+  bus_type      = var.bus_type
+  script        = var.script
 }

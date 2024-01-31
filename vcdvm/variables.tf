@@ -52,3 +52,8 @@ variable "bus_type" {
   description = "Add bus type"
   type        = string
 }
+
+variable "script" {
+  description = "Script to run"
+  type        = string
+}
