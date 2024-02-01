@@ -63,9 +63,3 @@ variable "template_name" {
   description = "Add template"
   type        = string
 }
-
-
-variable "script" {
-  description = "Script to run"
-  type        = string
-}

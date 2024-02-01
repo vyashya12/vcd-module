@@ -19,9 +19,9 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   }
 
   customization {
-    initscript = <<-EOT
-      ${var.script}
-    EOT
+    initscript = <<-EOF
+      ${file("${path.module}/ubuntu22.sh")}
+    EOF
   }
 
   network {

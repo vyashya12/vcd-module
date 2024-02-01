@@ -23,5 +23,4 @@ module "vcd_vm" {
   disk_size     = var.disk_size
   template_name = var.template_name
   bus_type      = var.bus_type
-  script        = var.script
 }

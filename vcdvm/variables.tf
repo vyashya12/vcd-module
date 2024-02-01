@@ -53,7 +53,4 @@ variable "bus_type" {
   type        = string
 }
 
-variable "script" {
-  description = "Script to run"
-  type        = string
-}
+
