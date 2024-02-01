@@ -20,7 +20,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
 
   customization {
     initscript = <<-EOF
-      ${file("${path.module}/ubuntu22.sh")}
+      ${file("${path.module}/alma.sh")}
     EOF
   }
 
