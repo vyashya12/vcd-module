@@ -20,7 +20,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
 
   customization {
     initscript = <<-EOF
-      ${file("${path.module}/alma.sh")}
+      ${file("${path.module}/Win22.bat")}
     EOF
   }
 
