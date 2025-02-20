@@ -4,7 +4,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   org       = var.org_name
   vdc       = var.vdc_name
 
-  catalog_name  = "Templates"
+  vapp_template_id = var.vapp_template_id
   template_name = var.template_name
   cpus          = var.vCPU
   memory        = var.memory
