@@ -53,6 +53,11 @@ variable "script" {
   type        = string
 }
 
+variable "template_name" {
+  description = "Add template"
+  type        = string
+}
+
 variable "vapp_template_id" {
   description = "ID of the vApp template to use for VM provisioning"
   type        = string

@@ -22,6 +22,7 @@ module "vcd_vm" {
   network       = var.network
   disk_size     = var.disk_size
   vapp_template_id = var.vapp_template_id
+  template_name = var.template_name
   bus_type      = var.bus_type
   script        = var.script
 }
