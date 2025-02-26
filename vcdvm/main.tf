@@ -5,7 +5,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   vdc       = var.vdc_name
 
   
-  vapp_template_id = "d2123d78-afc8-441a-a11d-b3b64d1cd03f"
+  vapp_template_id = var.vapp_template_id
   cpus          = var.vCPU
   memory        = var.memory
   power_on      = true
