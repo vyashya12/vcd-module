@@ -4,8 +4,8 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   org       = var.org_name
   vdc       = var.vdc_name
 
-  catalog_name  = "Templates"
-  template_name = var.template_name
+  
+  vapp_template_id = "d2123d78-afc8-441a-a11d-b3b64d1cd03f"
   cpus          = var.vCPU
   memory        = var.memory
   power_on      = true

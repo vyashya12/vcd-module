@@ -59,7 +59,3 @@ variable "bus_type" {
   type        = string
 }
 
-variable "template_name" {
-  description = "Add template"
-  type        = string
-}
