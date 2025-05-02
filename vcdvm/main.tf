@@ -4,8 +4,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
   org       = var.org_name
   vdc       = var.vdc_name
 
-  catalog_name  = "Templates"
-  template_name = var.template_name
+  vapp_template_id = var.vapp_template_id
   cpus          = var.vCPU
   memory        = var.memory
   power_on      = true
@@ -15,7 +14,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
     size_in_mb      = var.disk_size
     bus_number      = 0
     unit_number     = 0
-    storage_profile = "FTT1-Medium-IOPs(Performance-VMC2)"
+    storage_profile = "MY1VMC4-HIGH-FTT1"
   }
 
   customization {
