@@ -53,4 +53,7 @@ variable "bus_type" {
   type        = string
 }
 
-
+variable "vapp_template_id" {
+  description = "vApp Template ID"
+  type        = string
+}

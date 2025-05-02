@@ -59,7 +59,7 @@ variable "bus_type" {
   type        = string
 }
 
-variable "template_name" {
-  description = "Add template"
+variable "vapp_template_id" {
+  description = "vApp Template ID"
   type        = string
 }
