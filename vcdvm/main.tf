@@ -15,7 +15,7 @@ resource "vcd_vapp_vm" "yashvmfromjenkin2" {
     size_in_mb      = var.disk_size
     bus_number      = 0
     unit_number     = 0
-    storage_profile = "FTT1-Medium-IOPs(Performance-VMC2)"
+    storage_profile = "MY1VMC4-HIGH-FTT1"
   }
 
   customization {
